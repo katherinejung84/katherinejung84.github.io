@@ -268,10 +268,10 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _docs
   - scope:
       path: ""
-      type: posts
+      type: docs
     values:
       layout: single
       author_profile: true
@@ -279,3 +279,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      sidebar:
+        nav: "docs"
+
