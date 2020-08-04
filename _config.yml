@@ -265,20 +265,60 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  HowToContribute:
+    output: true
+    permalink: /how-to-contribute/:path/
+
 
 # Defaults
 defaults:
-  # _docs
+# _pages
   - scope:
-      path: ""
-      type: docs
+      path: "_pages"
+      type: pages
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
       comments: # true
       share: true
       related: true
       sidebar:
-        nav: "docs"
+        title: Backend
+        nav: docs
+      toc: true
+      toc_sticky  : true  
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: # true
+      share: true
+      classes: wide
+      related: true
+      sidebar:
+        title: Backend
+        nav: docs
+      toc: true
+      toc_label   : "Contents"
+      toc_icon    : "link"
+      toc_sticky  : true
+      
+      
+
+
+
+
+
+
+
+
+
+
+
 
